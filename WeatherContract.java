@@ -48,9 +48,12 @@ public class WeatherContract {
     public static final String PATH_LOCATION = "location";
     */
 
+    /* Uncomment for
+    4b - Finishing the FetchWeatherTask
+    https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/m-1675098569
     // Format used for storing dates in the database.  ALso used for converting those strings
     // back into date objects for comparison/processing.
-    /*
+    
     public static final String DATE_FORMAT = "yyyyMMdd";
     */
 
@@ -59,7 +62,9 @@ public class WeatherContract {
      * @param date The input date
      * @return a DB-friendly representation of the date, using the format defined in DATE_FORMAT.
      */
-    /*
+    /* Uncomment for
+    4b - Finishing the FetchWeatherTask
+    https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/m-1675098569
     public static String getDbDateString(Date date){
         // Because the API returns a unix timestamp (measured in seconds),
         // it must be converted to milliseconds in order to be converted to valid date.
@@ -73,7 +78,9 @@ public class WeatherContract {
      * @param dateText the input date string
      * @return the Date object
      */
-    /*
+    /* Uncomment for
+    4b - Finishing the FetchWeatherTask
+    https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/m-1675098569
     public static Date getDateFromDb(String dateText) {
         SimpleDateFormat dbDateFormat = new SimpleDateFormat(DATE_FORMAT);
         try {
