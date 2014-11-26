@@ -32,7 +32,7 @@ public class TestDb extends AndroidTestCase {
         db.close();
     }
 
-    /* Uncomment for
+    /* TODO Uncomment for
     4a - JUnit testing
     https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/m-1633698603
     public void testInsertReadDb() {
@@ -129,19 +129,19 @@ public class TestDb extends AndroidTestCase {
         */
 
         /**
-         * YOUR CODE BELOW HERE FOR QUIZ
+         * TODO YOUR CODE BELOW HERE FOR QUIZ
          * QUIZ - 4a - ReadInsertDbTest
          * https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/e-1633698604/m-1633698605
          **/
 
-        /* Uncomment for
+        /* TODO Uncomment for
         4a - JUnit testing
         https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/m-1633698603
         dbHelper.close();
     }
     */
 
-    /* Uncomment for
+    /* TODO Uncomment for
     4b - Adding ContentProvider to Contract
     https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/m-1637521471
     static ContentValues createWeatherValues(long locationRowId) {
