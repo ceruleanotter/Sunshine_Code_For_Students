@@ -241,33 +241,7 @@ public class TestProvider extends AndroidTestCase {
 
         TestDb.validateCursor(cursor, updatedValues);
     }
-
-    public void testUpdateAndReadWeather() {
-        insertKalamazooData();
-        String newDescription = "Cats and Frogs (don't warn the tadpoles!)";
-
-        // Make an update to one value.
-        ContentValues kalamazooUpdate = new ContentValues();
-        kalamazooUpdate.put(WeatherEntry.COLUMN_SHORT_DESC, newDescription);
-
-        mContext.getContentResolver().update(
-                WeatherEntry.CONTENT_URI, kalamazooUpdate, null, null);
-
-        // A cursor is your primary interface to the query results.
-        Cursor weatherCursor = mContext.getContentResolver().query(
-                WeatherEntry.CONTENT_URI,
-                null,
-                null,
-                null,
-                null
-        );
-
-        // Make the same update to the full ContentValues for comparison.
-        ContentValues kalamazooAltered = createKalamazooWeatherValues(locationRowId);
-        kalamazooAltered.put(WeatherEntry.COLUMN_SHORT_DESC, newDescription);
-
-        TestDb.validateCursor(weatherCursor, kalamazooAltered);
-    }*/
+    */
 
 
 
