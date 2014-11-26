@@ -130,7 +130,7 @@ public class TestDb extends AndroidTestCase {
 
         /**
          * TODO YOUR CODE BELOW HERE FOR QUIZ
-         * QUIZ - 4a - ReadInsertDbTest
+         * QUIZ - 4a - InsertReadDbTest
          * https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/e-1633698604/m-1633698605
          **/
 
@@ -142,8 +142,8 @@ public class TestDb extends AndroidTestCase {
     */
 
     /* TODO Uncomment for
-    4b - Adding ContentProvider to Contract
-    https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/m-1637521471
+    4a - Simplify Tests
+    https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/e-1633698607/m-1615128666
     static ContentValues createWeatherValues(long locationRowId) {
         ContentValues weatherValues = new ContentValues();
         weatherValues.put(WeatherEntry.COLUMN_LOC_KEY, locationRowId);
