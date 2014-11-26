@@ -129,7 +129,6 @@ public class TestProvider extends AndroidTestCase {
 
         TestDb.validateCursor(weatherCursor, weatherValues);
 
-
         // Add the location values in with the weather data so that we can make
         // sure that the join worked and we actually get all the values back
         addAllContentValues(weatherValues, testValues);
@@ -167,7 +166,6 @@ public class TestProvider extends AndroidTestCase {
     }
     */
 
-
     /* Uncomment for
     4b - Coding the Content Provider : getType()
     https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/e-1675098546/m-1675098547
@@ -202,8 +200,6 @@ public class TestProvider extends AndroidTestCase {
         assertEquals(LocationEntry.CONTENT_ITEM_TYPE, type);
     }
     */
-
-
 
     /* Uncomment for
     4b - Updating and Deleting
@@ -243,35 +239,9 @@ public class TestProvider extends AndroidTestCase {
     }
     */
 
-
-
     // Make sure we can still delete after adding/updating stuff
     public void testDeleteRecordsAtEnd() {
         deleteAllRecords();
-    }
-
-    public void testRemoveHumidityAndReadWeather() {
-        insertKalamazooData();
-
-        mContext.getContentResolver().delete(WeatherEntry.CONTENT_URI,
-                WeatherEntry.COLUMN_HUMIDITY + " = " + locationRowId, null);
-
-        // A cursor is your primary interface to the query results.
-        Cursor weatherCursor = mContext.getContentResolver().query(
-                WeatherEntry.CONTENT_URI,
-                null,
-                null,
-                null,
-                null
-        );
-
-        // Make the same update to the full ContentValues for comparison.
-        ContentValues kalamazooAltered = createKalamazooWeatherValues(locationRowId);
-        kalamazooAltered.remove(WeatherEntry.COLUMN_HUMIDITY);
-
-        TestDb.validateCursor(weatherCursor, kalamazooAltered);
-        int idx = weatherCursor.getColumnIndex(WeatherEntry.COLUMN_HUMIDITY);
-        assertEquals(-1, idx);
     }
 
     // Helper Methods
@@ -317,7 +287,6 @@ public class TestProvider extends AndroidTestCase {
         return testValues;
     }
 
-
     // Inserts both the location and weather data for the Kalamazoo data set.
     public void insertKalamazooData() {
         ContentValues kalamazooLocationValues = createKalamazooLocationValues();
@@ -332,5 +301,4 @@ public class TestProvider extends AndroidTestCase {
                 .insert(WeatherEntry.CONTENT_URI, kalamazooWeatherValues);
         assertTrue(weatherInsertUri != null);
     }
-
 }

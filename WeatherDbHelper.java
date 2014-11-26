@@ -43,8 +43,6 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
 
         final String SQL_CREATE_LOCATION_TABLE = "";
 
-
-
         /* Uncomment for
          4a - Create a Database for SQLiteOpenHelper
          https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/m-1633698598
@@ -84,9 +82,6 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
         */
     }
 
-
-
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
         /* Uncomment for
@@ -103,6 +98,4 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
         */
     }
-
-
 }
