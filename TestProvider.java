@@ -52,7 +52,7 @@
 //         cursor.close();
 
 //         /* TODO Uncomment for
-//         4b - Coding the Content Provider : query()
+//         4b - Implement Location_ID queries
 //         https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/e-1675098551/m-1675098552
 //         cursor = mContext.getContentResolver().query(
 //                 LocationEntry.CONTENT_URI,
@@ -73,7 +73,7 @@
 //     }
 
 //     /* TODO Uncomment for
-//     4b - Coding the Content Provider : query()
+//     4b - Implement Location_ID queries
 //     https://www.udacity.com/course/viewer#!/c-ud853/l-1576308909/e-1675098551/m-1675098552
 
 //     public void testInsertReadProvider() {
@@ -164,7 +164,7 @@
 //         );
 //         TestDb.validateCursor(weatherCursor, weatherValues);
 //     }
-//     */
+//	   /*    
     
     
 
