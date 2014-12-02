@@ -23,6 +23,8 @@
 // import android.os.Build;
 // import android.test.AndroidTestCase;
 // import android.util.Log;
+// import com.example.android.sunshine.app.data.WeatherContract.LocationEntry;
+// import com.example.android.sunshine.app.data.WeatherContract.WeatherEntry;
 
 // public class TestProvider extends AndroidTestCase {
 
@@ -164,7 +166,7 @@
 //         );
 //         TestDb.validateCursor(weatherCursor, weatherValues);
 //     }
-//	   /*    
+//	   */    
     
     
 

@@ -18,6 +18,9 @@ package com.example.android.sunshine.app.data;
 import android.content.ContentUris;
 import android.net.Uri;
 import android.provider.BaseColumns;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Defines table and column names for the weather database.
